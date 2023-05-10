@@ -17,5 +17,11 @@ int main() {
 
 	mahasiswa& ref = mhs;		// Pointer Reference refMhs
 	ref.nim = 2;
-	mhs.showNim();				
+	mhs.showNim();
+
+	mahasiswa* pMhs = &mhs;		// Pointer Deference pMhs
+	pMhs->nim = 3;				// Arrow Operator
+	mhs.showNim();
+	system("Pause");
+	return 0;
 }
